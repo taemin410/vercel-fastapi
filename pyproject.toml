@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vercel-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Tae Min Ha <taemin410@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vercel_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
