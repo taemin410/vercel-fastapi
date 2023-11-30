@@ -3,9 +3,7 @@ from time import time
 from fastapi import FastAPI  
 from openai import OpenAI
 
-client = OpenAI(
-    api_key="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",
-)
+client = OpenAI()
 
 app = FastAPI() # This is what will be refrenced in config
 
