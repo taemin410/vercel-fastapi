@@ -2,8 +2,11 @@
 from time import time
 from fastapi import FastAPI  
 from openai import OpenAI
+import os
 
-client = OpenAI()
+client = OpenAI(
+    api_key=os.environ.get("OPENAI_API_KEY"),
+)
 
 app = FastAPI() # This is what will be refrenced in config
 
